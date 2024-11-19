@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #1661a6;
+  --secondary-color: #fffee8;
+  --font-title: 'Oxygen', sans-serif;
+  --font-text: 'Spline Sans', sans-serif;
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  src: url('../assets/fonts/Oxygen/Oxygen-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  src: url('../assets/fonts/Oxygen/Oxygen-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Spline Sans';
+  src: url('../assets/fonts/Spline_Sans/SplineSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
