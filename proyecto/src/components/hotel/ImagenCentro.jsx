@@ -1,10 +1,11 @@
-import React from "react";
-import "../../styles/imagencentro.css";
+import '../../styles/imagencentro.css'
 
-export const ImagenCentro = ({src}) => {
+const ImagenCentro = ({ src }) => {
   return (
     <div className="imagen-centro">
-      <img src={src}/>
+      <img src={src} />
     </div>
-  );
-};
+  )
+}
+
+export default ImagenCentro
