@@ -1,1 +1,56 @@
+.servicios {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--primary-color);
+  padding: 1.3em;
+  color: #fff;
+  font-size: 0.95rem;
+}
 
+.servicios__item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.servicios__item__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.bienvenida {
+  text-align: center;
+}
+
+.bienvenida__title {
+  font-weight: normal;
+  margin-top: 1.5em;
+}
+
+.bienvenida__title--bold {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 4em;
+}
+
+.bienvenida__info {
+  width: 45%;
+  position: relative;
+  margin: 0 auto;
+  font-weight: 300;
+  margin-top: 3.5em;
+  margin-bottom: 5em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.bienvenida__info::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 15px);
+  width: 35px;
+  height: 3px;
+  background-color: var(--primary-color);
+}

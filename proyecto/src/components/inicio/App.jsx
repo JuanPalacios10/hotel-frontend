@@ -1,8 +1,8 @@
-import Header from './Header'
+import Inicio from './Inicio'
 import '../../styles/inicio.css'
 
 function App() {
-  return <Header />
+  return <Inicio />
 }
 
 export default App
