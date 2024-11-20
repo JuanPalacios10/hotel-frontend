@@ -1,8 +1,16 @@
+import { useState } from 'react'
 import Inicio from './Inicio'
-import '../../styles/inicio.css'
+import Hotel from '../hotel/Hotel'
 
 function App() {
-  return <Inicio />
+  const [path, setPath] = useState(window.location.pathname)
+
+  return (
+    <>
+      {path === '/' && <Inicio />}
+      {path === '/hotel' && <Hotel />}
+    </>
+  )
 }
 
 export default App

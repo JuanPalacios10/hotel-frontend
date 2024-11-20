@@ -4,6 +4,7 @@ import allImg from '../../assets/images/inicio/All inclusive.webp'
 import showImg from '../../assets/images/inicio/show.webp'
 import piscinaImg from '../../assets/images/inicio/Piscinas.webp'
 import marImg from '../../assets/images/inicio/Vista al mar.webp'
+import '../../styles/inicio.css'
 
 function Inicio() {
   return (
