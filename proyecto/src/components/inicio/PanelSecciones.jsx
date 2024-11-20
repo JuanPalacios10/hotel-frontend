@@ -1,10 +1,10 @@
 import '../../styles/panel-secciones.css'
-import habitacionesImg from '../../assets/images/habitacion.webp'
-import habitacionIcon from '../../assets/images/icon habitaciones.webp'
-import serviciosImg from '../../assets/images/servicios.webp'
-import serviciosIcon from '../../assets/images/icon park.webp'
-import hotelImg from '../../assets/images/nuestro-hotel.webp'
-import hotelIcon from '../../assets/images/icono-hotel.webp'
+import habitacionesImg from '../../assets/images/inicio/habitacion.webp'
+import habitacionIcon from '../../assets/images/inicio/icon habitaciones.webp'
+import serviciosImg from '../../assets/images/inicio/servicios.webp'
+import serviciosIcon from '../../assets/images/inicio/icon park.webp'
+import hotelImg from '../../assets/images/inicio/nuestro-hotel.webp'
+import hotelIcon from '../../assets/images/inicio/icono-hotel.webp'
 
 function PanelSecciones() {
   return (

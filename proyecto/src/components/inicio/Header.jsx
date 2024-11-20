@@ -1,5 +1,5 @@
 import Banner from './Banner'
-import bannerInicio from '../../assets/images/banner-inicio.jpeg'
+import bannerInicio from '../../assets/images/inicio/banner-inicio.jpeg'
 
 function Header() {
   return (

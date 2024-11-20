@@ -1,9 +1,9 @@
 import Header from './Header'
 import PanelSecciones from './PanelSecciones'
-import allImg from '../../assets/images/All inclusive.webp'
-import showImg from '../../assets/images/show.webp'
-import piscinaImg from '../../assets/images/Piscinas.webp'
-import marImg from '../../assets/images/Vista al mar.webp'
+import allImg from '../../assets/images/inicio/All inclusive.webp'
+import showImg from '../../assets/images/inicio/show.webp'
+import piscinaImg from '../../assets/images/inicio/Piscinas.webp'
+import marImg from '../../assets/images/inicio/Vista al mar.webp'
 
 function Inicio() {
   return (
