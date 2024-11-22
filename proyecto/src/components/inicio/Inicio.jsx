@@ -33,9 +33,10 @@ function Inicio() {
           <h4 className="bienvenida__title bienvenida__title--bold">Su casa en San Andrés</h4>
           <h4 className="bienvenida__title">Hotel Buen Vivir</h4>
           <p className="bienvenida__info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quis sint impedit unde
-            veritatis consequatur hic obcaecati dolore repellendus temporibus quos, soluta dolores
-            neque amet voluptatibus blanditiis adipisci at tempora.
+            Explora el confort y la hospitalidad en nuestras sedes a lo largo de Colombia. 
+            Estamos aquí para hacer de cada estadía una experiencia única y memorable, esforzandonos 
+            por brindarle la mejor experiencia en su visita. 
+            ¡Tu descanso es nuestra prioridad!
           </p>
         </section>
         <PanelSecciones />
