@@ -1,5 +1,5 @@
 import '../../styles/secciones.css'
-import logo from '../../assets/images/logo blanco letras.png'
+import logo from '../../assets/images/logo/logo blanco letras.png'
 
 const Secciones = () => {
   return (
