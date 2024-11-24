@@ -1,14 +1,13 @@
-import Header from './Header'
-import PanelSecciones from './PanelSecciones'
 import Banner from './Banner'
+import PanelSecciones from './PanelSecciones'
 import PanelServicios from './PanelServicios'
 import PanelServiciosItem from './PanelServicioItem'
 import PanelSeccionesItem from './PanelSeccionesItem'
+import bannerImg from '../../assets/images/inicio/banner-inicio.jpeg'
 import allImg from '../../assets/images/inicio/All inclusive.webp'
 import showImg from '../../assets/images/inicio/show.webp'
 import piscinaImg from '../../assets/images/inicio/Piscinas.webp'
 import marImg from '../../assets/images/inicio/Vista al mar.webp'
-import bannerImg from '../../assets/images/inicio/banner-inicio.jpeg'
 import habitacionesImg from '../../assets/images/inicio/habitacion.webp'
 import habitacionIcon from '../../assets/images/inicio/icon habitaciones.webp'
 import serviciosImg from '../../assets/images/inicio/servicios.webp'
@@ -20,9 +19,7 @@ import '../../styles/inicio.css'
 function Inicio() {
   return (
     <>
-      <Header>
-        <Banner imgUrl={bannerImg} />
-      </Header>
+      <Banner imgUrl={bannerImg} />
       <PanelServicios>
         <PanelServiciosItem icon={allImg}>Todo incluido / All inclusive</PanelServiciosItem>
         <PanelServiciosItem icon={showImg}>Show nocturnos</PanelServiciosItem>

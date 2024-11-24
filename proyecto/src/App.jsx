@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import Inicio from './components/inicio/Inicio'
-import Hotel from './components/hotel/Hotel'
+import AppRouter from './AppRouter'
+import Header from './components/inicio/Header'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
-  const [path] = useState(window.location.pathname)
-
   return (
-    <>
-      {path === '/' && <Inicio />}
-      {path === '/hotel' && <Hotel />}
-    </>
+    <BrowserRouter>
+      <Header />
+      <AppRouter />
+    </BrowserRouter>
   )
 }
 
