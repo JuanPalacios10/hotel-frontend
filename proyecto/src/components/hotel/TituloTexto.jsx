@@ -1,9 +1,9 @@
 import '../../styles/TituloTexto.css'
 
-const TituloTexto = ({ title, text }) => {
+const TituloTexto = ({ title, text, classTitle }) => {
   return (
-    <div className="TituloTexto">
-      <h2 className="text-title">{title}</h2>
+    <div className="TituloTexto" >
+      <h2 className= {classTitle}>{title}</h2>
       <p className="text-body">{text}</p>
     </div>
   )
