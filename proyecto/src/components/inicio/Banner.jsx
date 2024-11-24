@@ -1,10 +1,9 @@
 import '../../styles/banner.css'
 
-// eslint-disable-next-line react/prop-types
-function Banner({ imgUrl, title }) {
+function Banner({ imgUrl, children }) {
   return (
     <div className="banner" style={{ backgroundImage: `url(${imgUrl})` }}>
-      <h2 className="banner__title">{title}</h2>
+      <h2 className="banner__title">{children}</h2>
     </div>
   )
 }

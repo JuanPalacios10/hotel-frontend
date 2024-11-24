@@ -8,6 +8,7 @@
   opacity: 0.9;
   z-index: 1000; 
 }
+
 .lista-secciones {
   display: flex;
   justify-content: center;
@@ -29,8 +30,12 @@
   transition: color 0.1s ease;
 }
 
+.lista-secciones a.active {
+  color: #34d0ff;
+}
+
 .lista-secciones a:hover {
-  color: #20b4e0;
+  color: #34d0ff;
 }
 
 .botones1 {
