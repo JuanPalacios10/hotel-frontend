@@ -1,13 +1,13 @@
-import Header from '../inicio/Header'
 import TituloTexto from './TituloTexto'
 import ImagenCentro from './ImagenCentro'
 import hotel5estrellas from '../../assets/images/h5estrellas.jpg'
 import piscinaHotel from '../../assets/images/piscinahotel.jpg'
+import Banner from '../inicio/Banner'
 
 function Hotel() {
   return (
     <>
-      <Header title="El Hotel" />
+      <Banner imgUrl={piscinaHotel}>EL HOTEL</Banner>
       <main>
         <TituloTexto
           title="Hotel El Buen Vivir"
