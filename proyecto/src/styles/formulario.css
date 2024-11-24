@@ -1,0 +1,143 @@
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    left: 37%;
+    top: 5%;
+    max-width: 370px; /* para que no se vea tan ancho */
+    max-height: max-content;
+    padding: 20px; /* para que no se vea tan pegado a los bordes */
+    border-radius: 20px; /* para que se vea redondeado */
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    position: absolute;
+    gap: 8px;
+}
+
+.subtitulo {
+    font-size: 0.7em;
+    align-items: start;
+    color: grey;
+    font-family: var(--font-text);
+}
+
+.titulo {
+    font-size: 2em;
+    font-weight: 600;
+    align-items: start;
+    color: var(--primary-color);
+    position:relative; 
+    display: flex; 
+    align-items: center; 
+    padding-left: 30px; 
+    font-family: var(--font-title);
+}
+
+.titulo::before,.titulo::after {
+    position: absolute;
+    content: ""; 
+    height: 16px; 
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: var(--primary-color);
+  }
+
+.titulo::before {
+    width: 18px;
+    height: 18px;
+    background-color: var(--primary-color);
+}
+  
+.titulo::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 3s linear infinite;
+}
+
+.datos {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+
+input.form-control {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    font-size: 10px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-family: var(--font-text);
+    background: none;
+}
+
+input.form-control::placeholder{
+    position: absolute;
+    left: 10px; 
+    top: 15px; 
+    color: rgb(187, 187, 187);
+    font-size: 0.9em;
+    cursor: text; 
+    transition: 0.3s ease; 
+}
+
+input.form-control:focus::placeholder, input.form-control:not(:placeholder-shown)::placeholder {
+    top: 25px;
+    left: 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/*.cuadro input:valid::placeholder {
+    color: green;
+} */
+
+.btn-registrarme {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: var(--primary-color);
+    font-family: var(--font-title);
+    padding: 10px; 
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+
+.btn-registrarme:hover {
+    background-color: rgb(29, 54, 130);
+}
+  
+@keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+}
+
+p {
+    font-size: 0.8em;
+    color: grey;
+    font-family: var(--font-text);
+}
+
+
+
+
+
+
+
+
+
+
+  
+

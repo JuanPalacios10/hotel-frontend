@@ -8,7 +8,7 @@ import hotelIcon from '../../assets/images/inicio/icono-hotel.webp'
 
 function PanelSecciones() {
   return (
-    <section className="panel">
+    <section className="panel"> 
       <div className="panel__item">
         <img src={habitacionesImg} alt="" className="panel__item__img" />
         <a href="#" className="panel__item__link">
