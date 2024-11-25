@@ -1,9 +1,9 @@
-import { scrollToTop } from '../utilities/scrollToTop'
+import { scrollToTop } from '../utilities/scroll-helper'
 import { NavLink } from './NavLink'
 
 export function PanelSeccionesItem({ background, icon, href, children }) {
   const handleClick = () => {
-    scrollToTop('auto')
+    scrollToTop()
   }
 
   return (
