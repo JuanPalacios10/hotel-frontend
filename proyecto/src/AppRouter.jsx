@@ -1,14 +1,14 @@
-import Inicio from './components/inicio/Inicio'
-import Hotel from './components/hotel/Hotel'
+import { Inicio } from './pages/Inicio/Inicio'
+import { Hotel } from './pages/Hotel/Hotel'
+import { Contactos } from './pages/Contactos/Contactos'
 import { Routes, Route } from 'react-router-dom'
 
-function AppRouter() {
+export function AppRouter() {
   return (
     <Routes>
       <Route path="/" element={<Inicio />} />
       <Route path="/hotel" element={<Hotel />} />
+      <Route path="/contactos" element={<Contactos />} />
     </Routes>
   )
 }
-
-export default AppRouter

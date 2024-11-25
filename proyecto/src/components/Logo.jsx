@@ -1,4 +1,4 @@
-function Logo({ logo, children }) {
+export function Logo({ logo, children }) {
   return (
     <div className="logo">
       <img src={logo} alt="Logo" />
@@ -6,5 +6,3 @@ function Logo({ logo, children }) {
     </div>
   )
 }
-
-export default Logo
