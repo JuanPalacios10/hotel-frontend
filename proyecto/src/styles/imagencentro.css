@@ -1,13 +1,18 @@
 .imagen-centro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .imagen-centro img {
-    max-width: 45%;
-    height: auto;
-    border-radius: 20px;
-    margin-top: 40px;
-  }
-  
+  max-width: 45%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.imagen-centro.imagen-horizontal img {
+  max-width: 80%;
+  height: auto;
+  margin: 20px auto;
+}
