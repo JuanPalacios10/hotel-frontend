@@ -1,4 +1,4 @@
-function PanelServiciosItem({ icon, children }) {
+export function PanelServiciosItem({ icon, children }) {
   return (
     <div className="servicios__item">
       <img src={icon} alt="all inclusive" className="servicios__item__icon" />
@@ -6,5 +6,3 @@ function PanelServiciosItem({ icon, children }) {
     </div>
   )
 }
-
-export default PanelServiciosItem

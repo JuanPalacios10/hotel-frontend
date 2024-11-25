@@ -1,8 +1,8 @@
-import AppRouter from './AppRouter'
-import Header from './components/inicio/Header'
+import { AppRouter } from './AppRouter'
+import { Header } from './components/Header'
 import { BrowserRouter } from 'react-router-dom'
 
-function App() {
+export function App() {
   return (
     <BrowserRouter>
       <Header />
@@ -10,5 +10,3 @@ function App() {
     </BrowserRouter>
   )
 }
-
-export default App

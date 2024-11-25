@@ -1,8 +1,8 @@
-import Banner from './Banner'
-import PanelSecciones from './PanelSecciones'
-import PanelServicios from './PanelServicios'
-import PanelServiciosItem from './PanelServicioItem'
-import PanelSeccionesItem from './PanelSeccionesItem'
+import { Banner } from '../../components/Banner'
+import { PanelSecciones } from '../../components/PanelSecciones'
+import { PanelServicios } from '../../components/PanelServicios'
+import { PanelServiciosItem } from '../../components/PanelServicioItem'
+import { PanelSeccionesItem } from '../../components/PanelSeccionesItem'
 import bannerImg from '../../assets/images/inicio/banner-inicio.jpeg'
 import allImg from '../../assets/images/inicio/All inclusive.webp'
 import showImg from '../../assets/images/inicio/show.webp'
@@ -16,7 +16,7 @@ import hotelImg from '../../assets/images/inicio/nuestro-hotel.webp'
 import hotelIcon from '../../assets/images/inicio/icono-hotel.webp'
 import '../../styles/inicio.css'
 
-function Inicio() {
+export function Inicio() {
   return (
     <>
       <Banner imgUrl={bannerImg} />
@@ -37,13 +37,17 @@ function Inicio() {
           </p>
         </section>
         <PanelSecciones>
-          <PanelSeccionesItem background={habitacionesImg} icon={habitacionIcon}>
+          <PanelSeccionesItem
+            background={habitacionesImg}
+            icon={habitacionIcon}
+            href="/habitaciones"
+          >
             HABITACIONES
           </PanelSeccionesItem>
-          <PanelSeccionesItem background={serviciosImg} icon={serviciosIcon}>
+          <PanelSeccionesItem background={serviciosImg} icon={serviciosIcon} href="/servicios">
             SERVICIOS
           </PanelSeccionesItem>
-          <PanelSeccionesItem background={hotelImg} icon={hotelIcon}>
+          <PanelSeccionesItem background={hotelImg} icon={hotelIcon} href="/hotel">
             NUESTRO HOTEL
           </PanelSeccionesItem>
         </PanelSecciones>
@@ -51,5 +55,3 @@ function Inicio() {
     </>
   )
 }
-
-export default Inicio

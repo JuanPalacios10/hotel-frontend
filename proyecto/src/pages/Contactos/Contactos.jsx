@@ -1,14 +1,15 @@
-import Header from '../inicio/Header';
-import TituloTexto from './TituloTexto';
-import ImagenCentro from './ImagenCentro';
-import contactos from '../../assets/images/contactos.jpg';
+import { Banner } from '../../components/Banner'
+import { TituloTexto } from '../../components/TituloTexto'
+import { ImagenCentro } from '../../components/ImagenCentro'
+import contactos from '../../assets/images/contactos/contactos.jpg'
 
-function Contactos() {
+export function Contactos() {
   return (
     <>
-      <Header title="Contactos" />
+      <Banner>Contactos</Banner>
       <main>
         <TituloTexto
+          classTitle="text-title"
           title="Contáctanos"
           text="Estamos a sus órdenes, listos para responder cualquier duda o bien, para asistirle en reservar sus 
           próximos viajes o eventos. Llámenos o envíenos un correo electrónico, será un placer ayudarle."
@@ -18,5 +19,3 @@ function Contactos() {
     </>
   )
 }
-
-export default Contactos;
