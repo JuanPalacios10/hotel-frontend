@@ -7,11 +7,11 @@ import { Registro } from './pages/Registro/Registro'
 export function App() {
   return (
     <BrowserRouter>
+      <Modal>
+        <Registro />
+      </Modal>
       <Header />
       <AppRouter />
-      <Modal>
-        <Registro> </Registro>
-      </Modal> 
     </BrowserRouter>
   )
 }
