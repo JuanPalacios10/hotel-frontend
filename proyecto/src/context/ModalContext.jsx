@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from 'react'
 export const modalContext = createContext()
 
 export function ModalContextProvider({ children }) {
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(true)
 
   const openModal = () => setModal(true)
 
