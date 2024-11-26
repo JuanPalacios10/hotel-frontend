@@ -4,18 +4,24 @@ import '../styles/modal.css'
 
 export function Modal({ children }) {
   const { modal, setModal } = useModalContext()
+  const modalRoot = document.getElementById('modal')
 
-  const closeModal = () => setModal(false)
+  const closeModal = () => {
+    setModal(false)
+  }
 
-  if (!modal) return
+  const handleContentClick = (event) => {
+    event.stopPropagation()
+  }
+
+  if (!modal || !modalRoot) return
 
   return createPortal(
-    <div className="modal">
-      <div className="overlay" onClick={closeModal}>
+    <div className="overlay" onClick={closeModal}>
+      <div className="modal" onClick={handleContentClick}>
         {children}
-        <button onClick={closeModal}>Cerrar modal</button>
       </div>
     </div>,
-    document.getElementById('modal')
+    modalRoot
   )
 }
