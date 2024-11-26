@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../../styles/formulario.css'
 
-export const Formulario = () => {
+export const Registro = () => {
   const [datos, setDatos] = useState({
     nombres: '',
     apellidos: '',
