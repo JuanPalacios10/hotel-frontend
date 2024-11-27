@@ -2,26 +2,24 @@
     background-color: var(--primary-color);
     color: white;
     padding: 20px 0;
-    margin-top: 40px;
+    margin-top: 30px;
   }
   
   .footer-contenido {
-    display: flex; /* Flexbox para alinearlos en horizontal */
+    display: flex; 
+    font-family: var(--font-title);
+    font-size: 13px;
     justify-content:center; /* Distribuye el espacio uniformemente */
-    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
-    gap: 30px; /* Espaciado entre las secciones */
-    padding: 0 20px;
+    align-items: centert; /* Alinea los elementos al inicio verticalmente */
+    gap: 100px; /* Espaciado entre los elementos */
+    padding: 0px; 
   }
   
+
   .footer-section {
-    text-align: left; /* Asegura alineación de texto a la izquierda */
+    text-align:left; /* Asegura alineación de texto a la izquierda */
   }
-  
-  .footer-section h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
+
   .footer-section ul {
     list-style: none;
     padding: 0;
@@ -32,26 +30,26 @@
   }
   
   .redes {
-    display: flex; /* Alinea los enlaces de redes sociales en horizontal */
+    display:contents; 
     gap: 10px; /* Espaciado entre los íconos */
   }
   
-  .redes a {
+  .footer-contenido a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
     transition: color 0.3s;
   }
   
-  .redes a:hover {
-    color: #f0a500; /* Color al pasar el cursor */
+  .footer-contenido a:hover {
+    color: #34d0ff; 
   }
   
-  .footer-bottom {
-    margin-top: 20px;
+  p {
+    margin-top: auto; /* Empuja hacia el final del contenedor */
+    width: 100%; /* Para que ocupe todo el ancho */
     text-align: center;
-    font-size: 14px;
-    color: white;
+    color: #a2a2a2;
+    font-size: 0.8em;
   }
   
   
