@@ -5,6 +5,7 @@ export const Registro = () => {
   const [datos, setDatos] = useState({
     nombres: '',
     apellidos: '',
+    telefono: '',
     email: '',
     contraseña: '',
     confirmarContraseña: ''
@@ -23,6 +24,8 @@ export const Registro = () => {
       datos.nombres +
         ' ' +
         datos.apellidos +
+        ' ' +
+        datos.telefono +
         ' ' +
         datos.email +
         ' ' +
@@ -52,6 +55,15 @@ export const Registro = () => {
           className="form-control"
           type="text"
           name="apellido"
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="datos">
+        <input
+          placeholder="Telefono"
+          className="form-control"
+          type="text"
+          name="telefono"
           onChange={handleInputChange}
         />
       </div>

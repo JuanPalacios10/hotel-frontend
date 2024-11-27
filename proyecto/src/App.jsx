@@ -8,7 +8,7 @@ export function App() {
   return (
     <BrowserRouter>
       <Modal>
-        <Registro />
+        <Registro /> 
       </Modal>
       <Header />
       <AppRouter />
