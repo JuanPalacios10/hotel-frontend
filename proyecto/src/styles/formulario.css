@@ -97,6 +97,7 @@ input.form-control:not(:placeholder-shown)::placeholder {
 } */
 
 .btn-registrarme {
+  cursor: pointer;
   border: none;
   outline: none;
   width: 100%;

@@ -2,10 +2,14 @@ import { ListaSecciones } from './ListaSecciones'
 import { Seccion } from './Seccion'
 import { NavLink } from './NavLink'
 import { Logo } from './Logo'
-import '../styles/secciones.css'
 import logo from '../assets/images/logo/logo blanco letras.png'
+import { Button } from './Button'
+import { useModalContext } from '../context/ModalContext'
+import '../styles/secciones.css'
 
 export const Secciones = () => {
+  const {openModal} = useModalContext()
+
   return (
     <nav className="menu-secciones">
       <div className="barra">
@@ -31,11 +35,11 @@ export const Secciones = () => {
           </Seccion>
         </ListaSecciones>
         <div className="botones1">
-          <button className="btn InicioSesion">Iniciar Sesión</button>
-          <button className="btn Registro">Registrarse</button>
+          <Button handleClick={() => openModal("login")}>Iniciar Sesión</Button>
+          <Button handleClick={() => openModal("registro")}>Registrarse</Button>
         </div>
         <div className="botones2">
-          <button className="btn Reservar">Reservar Ya</button>
+          <Button className="Reservar">Reservar Ya</Button>
         </div>
       </div>
     </nav>

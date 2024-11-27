@@ -98,7 +98,7 @@ export const Registro = () => {
         Registrarme
       </button>
       <p className="iniciar-sesion">
-        Ya tines una cuenta ? <a href="#">iniciar sesion</a>{' '}
+        Ya tines una cuenta ? <a href="#">iniciar sesion</a>
       </p>
     </form>
   )

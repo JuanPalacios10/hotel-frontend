@@ -1,0 +1,57 @@
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  .footer-contenido {
+    display: flex; /* Flexbox para alinearlos en horizontal */
+    justify-content:center; /* Distribuye el espacio uniformemente */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    gap: 30px; /* Espaciado entre las secciones */
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    text-align: left; /* Asegura alineación de texto a la izquierda */
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin: 5px 0;
+  }
+  
+  .redes {
+    display: flex; /* Alinea los enlaces de redes sociales en horizontal */
+    gap: 10px; /* Espaciado entre los íconos */
+  }
+  
+  .redes a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .redes a:hover {
+    color: #f0a500; /* Color al pasar el cursor */
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+  }
+  
+  
