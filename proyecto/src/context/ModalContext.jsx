@@ -3,9 +3,9 @@ import { createContext, useContext, useState } from 'react'
 export const modalContext = createContext()
 
 export function ModalContextProvider({ children }) {
-  const [modal, setModal] = useState(true)
+  const [modal, setModal] = useState(null)
 
-  const openModal = () => setModal(true)
+  const openModal = (modalId) => setModal(modalId)
 
   return (
     <modalContext.Provider value={{ modal, setModal, openModal }}>{children}</modalContext.Provider>

@@ -2,7 +2,7 @@ import { createPortal } from 'react-dom'
 import { useModalContext } from '../context/ModalContext'
 import '../styles/modal.css'
 
-export function Modal({ children }) {
+export function Modal({ modalId, children }) {
   const { modal, setModal } = useModalContext()
   const modalRoot = document.getElementById('modal')
 
@@ -14,7 +14,7 @@ export function Modal({ children }) {
     event.stopPropagation()
   }
 
-  if (!modal || !modalRoot) return
+  if (modal !== modalId || !modalRoot) return
 
   return createPortal(
     <div className="overlay" onClick={closeModal}>
