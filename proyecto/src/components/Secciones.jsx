@@ -13,7 +13,7 @@ export const Secciones = () => {
   return (
     <nav className="menu-secciones">
       <div className="barra">
-        <Logo logo={logo} />
+        <Logo logo={logo} className="logo"/>
         <ListaSecciones className="lista-secciones">
           <Seccion>
             <NavLink to="/">INICIO</NavLink>
