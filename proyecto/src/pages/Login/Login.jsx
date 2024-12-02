@@ -1,33 +1,32 @@
-import { Button } from "../../components/Button";
-import { FormGroup } from "../../components/FormGroup";
+import { ButtonForm } from '../../components/ButtonForm'
+import { FormGroup } from '../../components/FormGroup'
+import { FormLayout } from '../../components/FormLayout'
+import { InputForm } from '../../components/InputForm'
+import styled from '../../styles/login.module.css'
 
 export function Login() {
-    return (
-        <form className="cuadro">
-            <h2 className="titulo">Inicio de Sesión</h2>
-            <FormGroup className="datos">
-                <input
-                placeholder="Usuario"
-                className="form-control"
-                type="text"
-                />
-            </FormGroup>
-            <FormGroup className="datos">
-                <input
-                placeholder="Contraseña"
-                className="form-control"
-                type="password"
-                />
-            </FormGroup>
-            <p className="iniciar-sesion">
-                No recuerdas tu contraseña?  <a href="#">Recuperar contraseña</a>
-            </p>
-            <button type="submit" className="btn-registrarme">
-                Registrarme
-            </button>
-            <p className="iniciar-sesion">
-                No tienes una cuenta?  <a href="#">Registrarse</a>
-            </p>
-        </form>
-    )
+  const { recuperarContraseña, registrarse } = styled
+
+  return (
+    <form className="form">
+      <FormLayout
+        title="Iniciar Sesión"
+        subtitle="Inicia sesión para acceder a todas las posibilades que ofrece nuestro hotel!."
+      >
+        <FormGroup>
+          <InputForm type="text" placeholder="Usuario" />
+        </FormGroup>
+        <FormGroup>
+          <InputForm type="password" placeholder="Contraseña" />
+        </FormGroup>
+        <span className={recuperarContraseña}>
+          No recuerdas tu contraseña? <a href="#">Recuperar contraseña</a>
+        </span>
+        <ButtonForm>Iniciar Sesión</ButtonForm>
+        <span className={registrarse}>
+          No tienes una cuenta? <a href="#">Registrarse</a>
+        </span>
+      </FormLayout>
+    </form>
+  )
 }

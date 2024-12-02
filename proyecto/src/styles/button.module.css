@@ -1,0 +1,15 @@
+.btn {
+  background-color: transparent;
+  color: white;
+  font-family: var(--font-title);
+  font-size: 0.7rem;
+  padding: 0.5em 1em;
+  border: 2px solid white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2593d3;
+  color: white;
+}

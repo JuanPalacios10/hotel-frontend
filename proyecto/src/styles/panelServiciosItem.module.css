@@ -1,0 +1,10 @@
+.servicios__item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.servicios__item__icon {
+  width: 30px;
+  height: 30px;
+}

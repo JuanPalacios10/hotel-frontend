@@ -1,0 +1,68 @@
+.formLayout {
+  display: flex;
+  flex-direction: column;
+  max-width: 370px; /* para que no se vea tan ancho */
+  max-height: max-content;
+  padding: 40px 30px; /* para que no se vea tan pegado a los bordes */
+  border-radius: 20px; /* para que se vea redondeado */
+  background-color: white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  gap: 0.8em;
+}
+
+.subtitulo {
+  font-size: 0.8em;
+  align-items: start;
+  color: grey;
+  font-family: var(--font-text);
+  margin-top: 0;
+}
+
+.titulo {
+  font-size: 2em;
+  font-weight: 600;
+  align-items: start;
+  color: var(--primary-color);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  font-family: var(--font-title);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.titulo::before,
+.titulo::after {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: var(--primary-color);
+}
+
+.titulo::before {
+  width: 18px;
+  height: 18px;
+  background-color: var(--primary-color);
+}
+
+.titulo::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 3s linear infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
