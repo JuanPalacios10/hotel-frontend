@@ -5,13 +5,18 @@
   margin-top: 50px;
 }
 
+.logo {
+  width: 200px;
+  height: 100px;
+}
+
 .footerContenido {
   display: flex;
   font-family: var(--font-title);
   font-size: 13px;
   justify-content: center; /* Distribuye el espacio uniformemente */
-  align-items: centert; /* Alinea los elementos al inicio verticalmente */
-  gap: 100px; /* Espaciado entre los elementos */
+  align-items: center; /* Alinea los elementos al inicio verticalmente */
+  gap: 200px; /* Espaciado entre los elementos */
   padding: 0px;
 }
 
