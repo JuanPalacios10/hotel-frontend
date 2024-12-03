@@ -1,15 +1,20 @@
+
 import {
   footer,
+  logo,
   footerContenido,
   footerSection,
   redes,
   footerBottom
-} from '../styles/footer.module.css'
+} from '../styles/footer.module.css' 
+import { Logo } from './Logo'
+import logoImg from '../assets/images/logo/logo blanco letras recorte.png'
 
 export function Footer() {
   return (
     <footer className={footer}>
       <div className={footerContenido}>
+        <Logo logoImg={logoImg} className={logo} />
         <div className={footerSection}>
           <h3>INFORMACION</h3>
           <ul>

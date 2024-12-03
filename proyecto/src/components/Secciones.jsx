@@ -1,7 +1,7 @@
 import { ListaSecciones } from './ListaSecciones'
 import { Seccion } from './Seccion'
 import { Logo } from './Logo'
-import logo from '../assets/images/logo/logo blanco letras.png'
+import logo from '../assets/images/logo/logo blanco letras recorte.png'
 import { Button } from './Button'
 import { useModalContext } from '../context/ModalContext'
 import { barra, menu, btnReserva } from '../styles/secciones.module.css'
