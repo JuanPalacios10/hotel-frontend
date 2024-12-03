@@ -1,7 +1,9 @@
-export function Logo({ className, logo, children }) {
+import { logo__img } from '../styles/logo.module.css'
+
+export function Logo({ logoImg, children }) {
   return (
-    <div className={className}>
-      <img src={logo} alt="Logo" />
+    <div>
+      <img src={logoImg} className={logo__img} alt="Logo" />
       {children}
     </div>
   )

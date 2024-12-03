@@ -1,7 +1,5 @@
-export function FormGroup({className, children}) {
-    return (
-        <div className={className}>
-            {children}
-        </div>   
-    )
+import { formGroup } from '../styles/formGroup.module.css'
+
+export function FormGroup({ children }) {
+  return <div className={formGroup}>{children}</div>
 }

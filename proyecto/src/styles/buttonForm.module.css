@@ -1,0 +1,17 @@
+.btnForm {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: var(--primary-color);
+  font-family: var(--font-title);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+}
+
+.btnForm:hover {
+  background-color: rgb(29, 54, 130);
+}

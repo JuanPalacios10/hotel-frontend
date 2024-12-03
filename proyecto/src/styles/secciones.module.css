@@ -1,0 +1,24 @@
+.barra {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1661a6;
+  padding: 1.5em 4em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  z-index: 1000;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+
+.btnReserva {
+  font-size: 0.8rem;
+}

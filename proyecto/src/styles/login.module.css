@@ -1,0 +1,11 @@
+.recuperarContraseña,
+.registrarse {
+  margin-top: 0.8em;
+  font-size: 0.8em;
+  color: grey;
+}
+
+.recuperarContraseña {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}

@@ -1,0 +1,15 @@
+.seccion__link {
+  font-family: var(--font-title);
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: color 0.1s ease;
+}
+
+.seccion__link.active {
+  color: #34d0ff;
+}
+
+.seccion__link:hover {
+  color: #34d0ff;
+}

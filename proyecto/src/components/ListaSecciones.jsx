@@ -1,3 +1,9 @@
-export function ListaSecciones({ children, className }) {
-  return <ul className={className}>{children}</ul>
+import { listaSecciones } from '../styles/listaSecciones.module.css'
+
+export function ListaSecciones({ children }) {
+  return (
+    <nav>
+      <ul className={listaSecciones}>{children}</ul>
+    </nav>
+  )
 }
