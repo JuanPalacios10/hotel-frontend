@@ -14,9 +14,17 @@
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 65%;
+  gap: 50px;
+  width: 80%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 2.5em;
+  /* margin-left: auto; */
 }
 
 .btnReserva {
