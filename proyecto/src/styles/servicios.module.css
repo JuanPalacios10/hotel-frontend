@@ -1,0 +1,53 @@
+.servicios {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(234, 243, 243);
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 1px;
+}
+
+.botones button {
+  padding: 15px 50px;
+  font-size: 1rem;
+  font-family: var(--font-text);
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s, border 0.2s;
+}
+
+.botones button.activo {
+  border-width: 0.08cm;
+  border-color: #000000;
+}
+
+.botones button:hover {
+  transform: scale(1.05);
+  border-color: rgb(220, 245, 253);
+}
+.contenido {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  background-color: rgb(234, 243, 243);
+}
+
+.titulo {
+  color: #ffffff;
+  font-family: var(--font-title);
+}

@@ -4,6 +4,7 @@
   padding: 10px;
   text-align: left;
 }
+
 .text-title {
   font-family: var(--font-title);
   font-size: 1.5rem;
@@ -11,12 +12,13 @@
   margin-top: 30px;
 }
 
-.text-body {
+.text{
   font-family: var(--font-text);
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #333;
   margin-top: 40px;
 }
+
 .text-title-center {
   text-align: center;
 }
