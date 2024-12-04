@@ -1,18 +1,18 @@
-.imagen-centro {
+.imagenCentro {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.imagen-centro img {
+.imagenCentro img {
   max-width: 45%;
   height: auto;
   border-radius: 20px;
   margin-top: 40px;
 }
 
-.imagen-centro.imagen-horizontal img {
+
+.imagenHorizontal img {
   max-width: 80%;
-  height: auto;
   margin: 20px auto;
 }

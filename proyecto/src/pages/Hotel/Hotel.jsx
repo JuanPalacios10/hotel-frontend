@@ -1,6 +1,6 @@
 import { TituloTexto } from '../../components/TituloTexto'
 import { ImagenCentro } from '../../components/ImagenCentro'
-import hotel5estrellas from '../../assets/images/hotel/h5estrellas.jpg'
+import hotel5estrellas from '../../assets/images/hotel/hotel5estrellas.jpg'
 import piscinaHotel from '../../assets/images/hotel/piscinahotel.jpg'
 import hhotel from '../../assets/images/hotel/hhotel.jpg'
 import { Banner } from '../../components/Banner'
@@ -11,7 +11,7 @@ export function Hotel() {
       <Banner imgUrl={hhotel}>EL HOTEL</Banner>
       <main>
         <TituloTexto
-          classTitle="text-title text-title-center"
+          classTitle="text-title"
           title="Hotel El Buen Vivir"
           text="Explora nuestras habitaciones y servicios exclusivos diseñados para tu máximo confort.Somos un hotel 
         con presencia en diversas ciudades de Colombia, incluyendo Santa Marta, Cali, Medellín, Bogotá, Cartagena 

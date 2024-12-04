@@ -1,9 +1,13 @@
-import '../styles/imagencentro.css'
+import styles from '../styles/imagencentro.module.css';
 
 export const ImagenCentro = ({ src, className = '' }) => {
+  const combinedClassName = `${styles.imagenCentro} ${
+    className === 'imagen-horizontal' ? styles.imagenHorizontal : ''
+  }`;
+
   return (
-    <div className={`imagen-centro ${className}`}>
-      <img src={src} />
+    <div className={combinedClassName}>
+      <img src={src} alt="Imagen centrada" />
     </div>
-  )
-}
+  );
+};
