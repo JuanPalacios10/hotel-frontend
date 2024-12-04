@@ -4,7 +4,7 @@ import { Logo } from './Logo'
 import logo from '../assets/images/logo/logo blanco letras recorte.png'
 import { Button } from './Button'
 import { useModalContext } from '../context/ModalContext'
-import { barra, menu, btnReserva } from '../styles/secciones.module.css'
+import { barra, menu, buttons, btnReserva } from '../styles/secciones.module.css'
 import { VerticalButtons } from './VerticalButtons'
 
 export const Secciones = () => {
@@ -22,11 +22,13 @@ export const Secciones = () => {
           <Seccion to="/contactos">CONTACTOS</Seccion>
           <Seccion to="/normas">NORMAS</Seccion>
         </ListaSecciones>
-        <VerticalButtons>
-          <Button handleClick={() => openModal('login')}>Iniciar Sesión</Button>
-          <Button handleClick={() => openModal('registro')}>Registrarse</Button>
-        </VerticalButtons>
-        <Button className={btnReserva}>Reservar Ya</Button>
+        <div className={buttons}>
+          <VerticalButtons>
+            <Button handleClick={() => openModal('login')}>Iniciar Sesión</Button>
+            <Button handleClick={() => openModal('registro')}>Registrarse</Button>
+          </VerticalButtons>
+          <Button className={btnReserva}>Reservar Ya</Button>
+        </div>
       </div>
     </div>
   )
