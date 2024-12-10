@@ -6,6 +6,7 @@ import { Button } from './Button'
 import { useModalContext } from '../context/ModalContext'
 import { barra, menu, buttons, btnReserva } from '../styles/secciones.module.css'
 import { VerticalButtons } from './VerticalButtons'
+import { NavLink } from './NavLink'
 
 export const Secciones = () => {
   const { openModal } = useModalContext()
@@ -26,8 +27,8 @@ export const Secciones = () => {
           <VerticalButtons>
             <Button handleClick={() => openModal('login')}>Iniciar Sesión</Button>
             <Button handleClick={() => openModal('registro')}>Registrarse</Button>
-          </VerticalButtons>
-          <Button className={btnReserva}>Reservar Ya</Button>
+          </VerticalButtons> 
+          <NavLink to="/reservas"><Button className={btnReserva}>Reservar Ya</Button></NavLink>
         </div>
       </div>
     </div>

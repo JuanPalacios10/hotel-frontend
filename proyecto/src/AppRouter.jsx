@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Normas } from './pages/Normas/Normas'
 import { Habitaciones } from './pages/Habitaciones/Habitacion';
 import { Servicios } from "./pages/Servicios/Servicios";
+import { Reservas } from "./pages/Reservas/Reservacion";
 
 export function AppRouter() {
   return (
@@ -15,6 +16,7 @@ export function AppRouter() {
       <Route path="/normas" element={<Normas />} />
       <Route path="/habitaciones" element={<Habitaciones />} />
       <Route path="/servicios" element={<Servicios />} />
+      <Route path="/reservas" element={<Reservas />} />
     </Routes>
   )
 }
