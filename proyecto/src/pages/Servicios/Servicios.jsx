@@ -7,8 +7,6 @@ import sbar from "../../assets/images/servicios/sbar.jpg";
 import spiscina from "../../assets/images/servicios/spiscina.jpg";
 import sparque from "../../assets/images/servicios/sparque.jpg";
 import srestaurante from "../../assets/images/servicios/srestaurante.jpg";
-import szonabar from "../../assets/images/servicios/szonabar.jpg";
-import szonarestaurante from "../../assets/images/servicios/szonarestaurante.jpg";
 
 const servicios = {
   parque: {
