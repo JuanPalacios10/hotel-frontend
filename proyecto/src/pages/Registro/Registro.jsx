@@ -4,13 +4,13 @@ import { FormGroup } from '../../components/FormGroup'
 import { InputForm } from '../../components/InputForm'
 import { ButtonForm } from '../../components/ButtonForm'
 import { iniciarSesion } from '../../styles/registro.module.css'
+import { register } from '../../services/register'
 
 export const Registro = () => {
   const [datos, setDatos] = useState({
-    nombres: '',
-    apellidos: '',
-    telefono: '',
+    nombre: '',
     email: '',
+    telefono: '',
     contraseña: '',
     confirmarContraseña: ''
   })
@@ -24,20 +24,9 @@ export const Registro = () => {
 
   const enviarDatos = (evento) => {
     evento.preventDefault()
-    console.log(
-      datos.nombres +
-        ' ' +
-        datos.apellidos +
-        ' ' +
-        datos.telefono +
-        ' ' +
-        datos.email +
-        ' ' +
-        datos.contraseña +
-        ' ' +
-        datos.confirmarContraseña +
-        ' '
-    )
+    register(datos)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err))
   }
 
   return (
@@ -49,24 +38,8 @@ export const Registro = () => {
         <FormGroup>
           <InputForm
             type="text"
-            placeholder="Nombres"
-            name="nombres"
-            handleChange={handleInputChange}
-          />
-        </FormGroup>
-        <FormGroup>
-          <InputForm
-            type="text"
-            placeholder="Apellidos"
-            name="apellidos"
-            handleChange={handleInputChange}
-          />
-        </FormGroup>
-        <FormGroup>
-          <InputForm
-            type="text"
-            placeholder="Telefono"
-            name="telefono"
+            placeholder="Nombre"
+            name="nombre"
             handleChange={handleInputChange}
           />
         </FormGroup>
@@ -75,6 +48,14 @@ export const Registro = () => {
             type="email"
             placeholder="Email"
             name="email"
+            handleChange={handleInputChange}
+          />
+        </FormGroup>
+        <FormGroup>
+          <InputForm
+            type="text"
+            placeholder="Telefono"
+            name="telefono"
             handleChange={handleInputChange}
           />
         </FormGroup>
@@ -96,7 +77,7 @@ export const Registro = () => {
         </FormGroup>
         <ButtonForm>Registrarme</ButtonForm>
         <span className={iniciarSesion}>
-          Ya tienes una cuenta ? <a href="#">iniciar sesion</a>
+          Ya tienes una cuenta? <a href="#">Iniciar sesion</a>
         </span>
       </FormLayout>
     </form>

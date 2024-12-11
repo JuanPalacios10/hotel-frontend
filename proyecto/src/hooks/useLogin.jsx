@@ -10,9 +10,7 @@ export function useLogin() {
     try {
       setLoading(true)
       const res = await login(data)
-      const user = await res.json()
-      setForm(user)
-      console.log(user)
+      setForm(res)
     } catch (err) {
       setError(err)
       console.log(err)
