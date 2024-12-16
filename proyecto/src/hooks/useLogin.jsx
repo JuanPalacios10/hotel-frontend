@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { login } from '../services/login'
+import { useUserContext } from '../context/UserContext'
 
 export function useLogin() {
-  const [form, setForm] = useState(null)
+  const { setLogin } = useUserContext()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
@@ -10,17 +11,23 @@ export function useLogin() {
     try {
       setLoading(true)
       const res = await login(data)
-      setForm(res)
+
+      if (res.status === 200) {
+        setError(null)
+        setLogin({
+          user: res.data?.username,
+          token: res.data?.access
+        })
+      }
     } catch (err) {
-      setError(err)
       console.log(err)
+      setError(err)
     } finally {
       setLoading(false)
     }
   }
 
   return {
-    form,
     loading,
     error,
     makeLogin

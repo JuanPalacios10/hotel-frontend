@@ -1,23 +1,14 @@
-export const formatLoginData = (data) => {
+export const formatData = (data, format) => {
   if (!(data instanceof Object)) return
 
   const dataKeys = Object.keys(data)
 
-  return {
-    username: data[dataKeys[0]],
-    password: data[dataKeys[1]]
-  }
-}
+  if (dataKeys.length !== format.length) return
+  const formattedData = {}
 
-export const formatRegisterData = (data) => {
-  if (!(data instanceof Object)) return
+  dataKeys.forEach((key, index) => {
+    formattedData[format[index]] = data[key]
+  })
 
-  const dataKeys = Object.keys(data)
-
-  return {
-    username: data[dataKeys[0]],
-    email: data[dataKeys[1]],
-    phone: data[dataKeys[2]],
-    password: data[dataKeys[3]]
-  }
+  return formattedData
 }

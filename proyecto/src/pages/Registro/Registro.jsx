@@ -30,7 +30,7 @@ export const Registro = () => {
   }
 
   return (
-    <form className="cuadro" onSubmit={enviarDatos}>
+    <form onSubmit={enviarDatos}>
       <FormLayout
         title="Registro"
         subtitle="Regístrese ahora y obtenga acceso completo a nuestros servicios."

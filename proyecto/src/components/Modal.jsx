@@ -14,7 +14,7 @@ export function Modal({ modalId, children }) {
     event.stopPropagation()
   }
 
-  if (modal !== modalId || !modalRoot) return
+  if (modal !== modalId || !modalRoot) return null
 
   return createPortal(
     <div className={overlay} onClick={closeModal}>
