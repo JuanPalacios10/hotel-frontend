@@ -10,14 +10,14 @@ import {
   crossIcon
 } from '../styles/errorCard.module.css'
 
-export function ErrorCard({ title, message }) {
+export function ErrorCard({ error }) {
   const [show, setShow] = useState(true)
 
   const handleClick = () => {
     setShow(false)
   }
 
-  if (!show) return null
+  if (!show || !error) return null
 
   return (
     <div className={card}>
@@ -40,8 +40,8 @@ export function ErrorCard({ title, message }) {
         </svg>
       </div>
       <div className={messageTextContainer}>
-        <p className={messageText}>{title}</p>
-        <p className={subText}>{message}</p>
+        <p className={messageText}>{error.response?.data?.detail ?? 'Error'}</p>
+        <p className={subText}>{error && error.message}</p>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"

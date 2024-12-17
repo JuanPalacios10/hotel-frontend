@@ -27,10 +27,13 @@ export function Login() {
   useEffect(() => {
     if (!response) return
 
-    setUser({
+    const data = {
       username: response.username,
       token: response.access
-    })
+    }
+
+    setUser(data)
+    window.localStorage.setItem('user', JSON.stringify(data))
     closeModal()
   }, [response, closeModal, setUser])
 
@@ -58,9 +61,7 @@ export function Login() {
           </span>
         </FormLayout>
       </form>
-      {error && (
-        <ErrorCard title={error.response?.data?.detail ?? 'Error'} message={error.message} />
-      )}
+      <ErrorCard error={error} />
     </>
   )
 }
