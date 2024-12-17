@@ -3,20 +3,36 @@ import { FormGroup } from '../../components/FormGroup'
 import { FormLayout } from '../../components/FormLayout'
 import { InputForm } from '../../components/InputForm'
 import styled from '../../styles/login.module.css'
-import { useLogin } from '../../hooks/useLogin'
+import { useFetch } from '../../hooks/useFetch'
 import { Loader } from '../../components/Loader'
 import { ErrorCard } from '../../components/ErrorCard'
+import { login } from '../../services/login'
+import { useModalContext } from '../../context/ModalContext'
+import { useUserContext } from '../../context/UserContext'
+import { useEffect } from 'react'
 
 export function Login() {
   const { recuperarContraseña, registrarse } = styled
-  const { loading, error, makeLogin } = useLogin()
+  const { closeModal } = useModalContext()
+  const { setUser } = useUserContext()
+  const { response, loading, error, makeCall } = useFetch(login)
 
   const handleSubmit = (event) => {
     event.preventDefault()
 
     const data = Object.fromEntries(new FormData(event.target))
-    makeLogin(data)
+    makeCall(data)
   }
+
+  useEffect(() => {
+    if (!response) return
+
+    setUser({
+      username: response.username,
+      token: response.access
+    })
+    closeModal()
+  }, [response, closeModal, setUser])
 
   if (loading) return <Loader />
 

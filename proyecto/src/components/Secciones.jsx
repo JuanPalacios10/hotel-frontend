@@ -7,8 +7,11 @@ import { useModalContext } from '../context/ModalContext'
 import { barra, menu, buttons, btnReserva } from '../styles/secciones.module.css'
 import { VerticalButtons } from './VerticalButtons'
 import { NavLink } from './NavLink'
+import { Profile } from './Profile'
+import { useUserContext } from '../context/UserContext'
 
 export const Secciones = () => {
+  const { user } = useUserContext()
   const { openModal } = useModalContext()
 
   return (
@@ -24,11 +27,17 @@ export const Secciones = () => {
           <Seccion to="/normas">NORMAS</Seccion>
         </ListaSecciones>
         <div className={buttons}>
-          <VerticalButtons>
-            <Button handleClick={() => openModal('login')}>Iniciar Sesión</Button>
-            <Button handleClick={() => openModal('registro')}>Registrarse</Button>
-          </VerticalButtons> 
-          <NavLink to="/reservas"><Button className={btnReserva}>Reservar Ya</Button></NavLink>
+          {user.token ? (
+            <Profile />
+          ) : (
+            <VerticalButtons>
+              <Button handleClick={() => openModal('login')}>Iniciar Sesión</Button>
+              <Button handleClick={() => openModal('registro')}>Registrarse</Button>
+            </VerticalButtons>
+          )}
+          <NavLink to="/reservas">
+            <Button className={btnReserva}>Reservar Ya</Button>
+          </NavLink>
         </div>
       </div>
     </div>

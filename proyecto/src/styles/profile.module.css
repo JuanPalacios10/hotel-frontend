@@ -1,0 +1,72 @@
+.template {
+  /* fill */
+  --fill: #0000;
+  --fillHover: hsl(202, 70%, 49%, 0.2);
+  --fillActive: hsl(208, 76%, 26%);
+  /* txt */
+  --txt: #eee;
+  --br: 0.325rem;
+  /* ---------------------------------------------------------- */
+  font-size: 0.975rem;
+  color: var(--txt);
+}
+
+.popup,
+.profileItem {
+  position: relative;
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+  white-space: nowrap;
+  padding: 0.5em;
+  text-align: left;
+  background-color: var(--fill);
+  border-radius: var(--br);
+}
+
+.popup:focus,
+.profileItem:focus {
+  background-color: var(--fillActive);
+}
+
+.popupHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.popupMain {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-radius: var(--br);
+  background-color: var(--fillActive);
+  box-shadow: hsl(208, 76%, 30%) 0px 0px 0px 1px;
+}
+
+.popup:focus-within .popupMain {
+  display: block;
+  margin-top: 1rem;
+}
+
+.profileItem {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.profileItem:hover {
+  background-color: var(--fillHover);
+}
+
+.logOut {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  text-align: inherit;
+}
