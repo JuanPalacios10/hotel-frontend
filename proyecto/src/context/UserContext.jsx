@@ -4,7 +4,10 @@ import { initialState } from '../constants/userState'
 const userContext = createContext()
 
 export function UserContextProvider({ children }) {
-  const [user, setUser] = useState(initialState)
+  const [user, setUser] = useState(() => {
+    const user = window.localStorage.getItem('user')
+    return user ? JSON.parse(user) : initialState
+  })
 
   return <userContext.Provider value={{ user, setUser }}>{children}</userContext.Provider>
 }
