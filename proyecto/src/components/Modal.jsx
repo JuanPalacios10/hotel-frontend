@@ -3,12 +3,8 @@ import { useModalContext } from '../context/ModalContext'
 import { overlay } from '../styles/modal.module.css'
 
 export function Modal({ modalId, children }) {
-  const { modal, setModal } = useModalContext()
+  const { modal, closeModal } = useModalContext()
   const modalRoot = document.getElementById('modal')
-
-  const closeModal = () => {
-    setModal(false)
-  }
 
   const handleContentClick = (event) => {
     event.stopPropagation()

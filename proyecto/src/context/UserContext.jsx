@@ -1,16 +1,12 @@
 import { createContext, useContext, useState } from 'react'
+import { initialState } from '../constants/userState'
 
 const userContext = createContext()
 
-const initialState = {
-  user: null,
-  token: null
-}
-
 export function UserContextProvider({ children }) {
-  const [login, setLogin] = useState(initialState)
+  const [user, setUser] = useState(initialState)
 
-  return <userContext.Provider value={{ login, setLogin }}>{children}</userContext.Provider>
+  return <userContext.Provider value={{ user, setUser }}>{children}</userContext.Provider>
 }
 
 export function useUserContext() {

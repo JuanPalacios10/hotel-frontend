@@ -7,8 +7,12 @@ export function ModalContextProvider({ children }) {
 
   const openModal = (modalId) => setModal(modalId)
 
+  const closeModal = () => setModal(null)
+
   return (
-    <modalContext.Provider value={{ modal, setModal, openModal }}>{children}</modalContext.Provider>
+    <modalContext.Provider value={{ modal, setModal, openModal, closeModal }}>
+      {children}
+    </modalContext.Provider>
   )
 }
 

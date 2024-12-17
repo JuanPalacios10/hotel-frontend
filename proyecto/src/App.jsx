@@ -13,7 +13,7 @@ export function App() {
         <Login />
       </Modal>
       <Modal modalId="registro">
-        <Registro /> 
+        <Registro />
       </Modal>
       <Header />
       <AppRouter />
