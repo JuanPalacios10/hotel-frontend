@@ -1,54 +1,39 @@
 .bookingForm {
-  max-width: 600px;
-  margin: 40px auto;
+  max-width: 580px;
+  margin: 15px auto;
   padding: 20px;
-  border: 3px solid #cddafd;
-  border-radius: 20px;
-  border-width: 5px;
-  background-color: #5fadf5;
-  text-align: center;
-}
-
-.dateSection,
-.occupancySection {
+  border: 3px solid #defcfa;
+  border-radius: 8px;
+  background-color: #d4eaff;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
-  justify-content: center;
+  gap: 25px;
+  align-items: center;
 }
 
-.label {
+label {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1 1 calc(50% - 10px);
   font-size: 1rem;
+  text-align: center;
 }
 
-.input {
-  padding: 7px;
+input {
+  padding: 2px;
   font-size: 1rem;
-  border: 5px solid #bfd0ff;
+  border: 2px solid #ccc;
   border-radius: 4px;
   text-align: center;
-  width: 150px;
-  max-width: 100%;
+  width: 120px;
 }
 
-.summary {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-  color: #1d1d1d;
+.occupancyWrapper {
+  position: relative;
 }
 
-.searchButton {
-  width: 150px;
-  max-width: 100%;
+.toggleButton {
   padding: 10px;
-  font-size: 1.2rem;
-  background-color: #1352ff;
+  font-size: 1rem;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -56,6 +41,36 @@
   transition: background-color 0.3s ease;
 }
 
-.searchButton:hover {
-  background-color: #2962ff;
+.toggleButton:hover {
+  background-color: #3067fd;
 }
+
+.occupancySection {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  background-color: #d4eaff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.searchButton, .toggleButton {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 120px;
+}
+
+.searchButton:hover, .toggleButton:hover {
+  background-color: #5590ff;
+  transform: scale(1.05);}
