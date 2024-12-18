@@ -1,10 +1,10 @@
 .formLayout {
   display: flex;
   flex-direction: column;
-  max-width: 370px; /* para que no se vea tan ancho */
+  max-width: 400px;
   max-height: max-content;
-  padding: 40px 30px; /* para que no se vea tan pegado a los bordes */
-  border-radius: 20px; /* para que se vea redondeado */
+  padding: 40px 30px;
+  border-radius: 20px;
   background-color: white;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   gap: 0.8em;

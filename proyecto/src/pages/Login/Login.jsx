@@ -2,7 +2,7 @@ import { ButtonForm } from '../../components/ButtonForm'
 import { FormGroup } from '../../components/FormGroup'
 import { FormLayout } from '../../components/FormLayout'
 import { InputForm } from '../../components/InputForm'
-import styled from '../../styles/login.module.css'
+import { recuperarContrasena, btnLink } from '../../styles/login.module.css'
 import { useFetch } from '../../hooks/useFetch'
 import { Loader } from '../../components/Loader'
 import { ErrorCard } from '../../components/ErrorCard'
@@ -12,8 +12,7 @@ import { useUserContext } from '../../context/UserContext'
 import { useEffect } from 'react'
 
 export function Login() {
-  const { recuperarContraseña, registrarse } = styled
-  const { closeModal } = useModalContext()
+  const { closeModal, openModal } = useModalContext()
   const { setUser } = useUserContext()
   const { response, loading, error, makeCall } = useFetch(login)
 
@@ -52,13 +51,17 @@ export function Login() {
           <FormGroup>
             <InputForm type="password" placeholder="Contraseña" name="contraseña" />
           </FormGroup>
-          <span className={recuperarContraseña}>
-            No recuerdas tu contraseña? <a href="#">Recuperar contraseña</a>
+          <span className={recuperarContrasena}>
+            No recuerdas tu contraseña?{' '}
+            <button
+              type="button"
+              className={btnLink}
+              onClick={() => openModal('recuperar-contraseña')}
+            >
+              Recuperar contraseña
+            </button>
           </span>
           <ButtonForm>Iniciar Sesión</ButtonForm>
-          <span className={registrarse}>
-            No tienes una cuenta? <a href="#">Registrarse</a>
-          </span>
         </FormLayout>
       </form>
       <ErrorCard error={error} />

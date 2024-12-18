@@ -10,14 +10,14 @@
   align-items: center;
 }
 
-label {
+.label {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
   text-align: center;
 }
 
-input {
+.input {
   padding: 2px;
   font-size: 1rem;
   border: 2px solid #ccc;
@@ -59,7 +59,8 @@ input {
   z-index: 10;
 }
 
-.searchButton, .toggleButton {
+.searchButton,
+.toggleButton {
   padding: 10px;
   font-size: 1rem;
   background-color: var(--primary-color);
@@ -71,6 +72,8 @@ input {
   width: 120px;
 }
 
-.searchButton:hover, .toggleButton:hover {
+.searchButton:hover,
+.toggleButton:hover {
   background-color: #5590ff;
-  transform: scale(1.05);}
+  transform: scale(1.05);
+}

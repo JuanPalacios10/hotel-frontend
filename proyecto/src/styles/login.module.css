@@ -1,11 +1,17 @@
-.recuperarContraseña,
-.registrarse {
-  margin-top: 0.8em;
+.recuperarContrasena {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
   font-size: 0.8em;
   color: grey;
 }
 
-.recuperarContraseña {
-  margin-top: 0.5em;
-  margin-bottom: 1em;
+.btnLink {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #5c2390;
+  text-decoration: underline;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
 }
