@@ -9,6 +9,7 @@ import {
 } from '../styles/footer.module.css' 
 import { Logo } from './Logo'
 import logoImg from '../assets/images/logo/logo blanco letras recorte.png'
+import { NavLink } from './NavLink'
 
 export function Footer() {
   return (
@@ -19,24 +20,21 @@ export function Footer() {
           <h3>INFORMACION</h3>
           <ul>
             <li>
-              <a href="#">Inicio</a>
+              <NavLink to="/hotel">Hotel</NavLink>
             </li>
             <li>
-              <a href="#">Hotel</a>
+              <NavLink to="/habitaciones">Habitaciones</NavLink>
             </li>
             <li>
-              <a href="#">Habitaciones</a>
+              <NavLink to="/servicios">Servicios</NavLink>
             </li>
             <li>
-              <a href="#">Servicios</a>
+              <NavLink to="/contactos">Contactos</NavLink>
             </li>
             <li>
-              <a href="#">Contactos</a>
+              <NavLink to="/normas">Normas</NavLink>
             </li>
-            <li>
-              <a href="#">Normas</a>
-            </li>
-          </ul>
+          </ul> 
         </div>
         <div className={footerSection}>
           <h3>CONTACTOS</h3>
@@ -50,13 +48,13 @@ export function Footer() {
           <h3>REDES</h3>
           <ul className={redes}>
             <li>
-              <a href="#">Facebook</a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"> Facebbok </a>
             </li>
             <li>
-              <a href="#">Instagram</a>{' '}
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"> Instagram </a>
             </li>
             <li>
-              <a href="#">Twitter</a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
             </li>
           </ul>
         </div>
