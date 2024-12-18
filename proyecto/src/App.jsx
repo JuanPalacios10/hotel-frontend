@@ -5,6 +5,7 @@ import { Modal } from './components/Modal'
 import { Registro } from './pages/Registro/Registro'
 import { Footer } from './components/Footer'
 import { Login } from './pages/Login/Login'
+import { RecuperarContra } from './components/RecuperarContra'
 
 export function App() {
   return (
@@ -14,6 +15,9 @@ export function App() {
       </Modal>
       <Modal modalId="registro">
         <Registro />
+      </Modal>
+      <Modal modalId="recuperar-contraseña">
+        <RecuperarContra />
       </Modal>
       <Header />
       <AppRouter />
